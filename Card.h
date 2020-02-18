@@ -7,6 +7,7 @@ private:
 
 public:
 	Card();
+	Card(std::string suit, std::string rank, int value);
 	std::string suit;
 	std::string rank;
 	int value;
