@@ -3,8 +3,13 @@
 
 class Player
 {
+private:
+	std::list<Card*> hand;
+	int score;
+
 public:
-	std::list<Card> hand;
-	void drawCard(Card card);
+	Player();
+	~Player();
+	void drawCard(Card* card);
 };
 
