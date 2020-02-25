@@ -7,6 +7,13 @@ UserPlayer::UserPlayer()
 	this->deck = nullptr;
 }
 
+UserPlayer::~UserPlayer()
+{
+	for (std::vector<Card*>::iterator currentCard = this->hand.begin(); currentCard != this->hand.end(); ++currentCard) {
+		delete((*currentCard));
+	}
+}
+
 UserPlayer::UserPlayer(Deck* deck)
 {
 	this->score = 0;
