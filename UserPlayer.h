@@ -8,6 +8,7 @@ private:
 	Deck* deck;
 public:
 	UserPlayer();
+	~UserPlayer();
 	UserPlayer(Deck* deck);
 	//handles turn logic for user's turn
 	void playerTurn();
