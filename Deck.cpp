@@ -13,6 +13,9 @@ Deck::Deck()
 
 Deck::~Deck()
 {
+	for (std::vector<Card*>::iterator currentCard = this->deck.begin(); currentCard != this->deck.end(); ++currentCard) {
+		delete((*currentCard));
+	}
 }
 
 //randomly select a card from the deck, store it in a temporary ptr, remove that card from the deck vector, then return temp ptr
