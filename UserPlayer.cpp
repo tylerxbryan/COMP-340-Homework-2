@@ -39,3 +39,10 @@ void UserPlayer::playerTurn()
 		std::cin >> userChoice;
 	}
 }
+
+void UserPlayer::InitialDraw()
+{
+	this->drawCard(deck->draw());
+	this->drawCard(deck->draw());
+	std::cout << "Plater drew " << this->hand[0]->toString() << " and " << this->hand[1]->toString() << "\n";
+}

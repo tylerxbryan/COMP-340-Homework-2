@@ -11,5 +11,6 @@ public:
 	UserPlayer(Deck* deck);
 	//handles turn logic for user's turn
 	void playerTurn();
+	void InitialDraw();
 };
 
