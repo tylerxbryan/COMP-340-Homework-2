@@ -7,6 +7,7 @@ private:
 	Deck* deck;
 public:
 	Dealer();
+	~Dealer();
 	Dealer(Deck* deck);
 	//handles logic for dealer's turn
 	void dealerTurn();
