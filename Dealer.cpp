@@ -40,3 +40,8 @@ void Dealer::InitialDraw()
 	this->drawCard(deck->draw());
 	std::cout << "Dealer drew " << this->hand[0]->toString() << " and face down card\n";
 }
+
+int Dealer::getScore()
+{
+	return this->score;
+}
