@@ -12,5 +12,6 @@ public:
 	//handles logic for dealer's turn
 	void dealerTurn();
 	void InitialDraw();
+	int getScore();
 };
 
