@@ -13,5 +13,6 @@ public:
 	//handles turn logic for user's turn
 	void playerTurn();
 	void InitialDraw();
+	int getScore();
 };
 

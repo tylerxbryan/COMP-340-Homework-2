@@ -71,3 +71,8 @@ void UserPlayer::InitialDraw()
 	this->drawCard(deck->draw());
 	std::cout << "Player drew " << this->hand[0]->toString() << " and " << this->hand[1]->toString() << "\n";
 }
+
+int UserPlayer::getScore()
+{
+	return this->score;
+}
