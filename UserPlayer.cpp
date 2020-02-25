@@ -44,5 +44,5 @@ void UserPlayer::InitialDraw()
 {
 	this->drawCard(deck->draw());
 	this->drawCard(deck->draw());
-	std::cout << "Plater drew " << this->hand[0]->toString() << " and " << this->hand[1]->toString() << "\n";
+	std::cout << "Player drew " << this->hand[0]->toString() << " and " << this->hand[1]->toString() << "\n";
 }
