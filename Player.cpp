@@ -13,5 +13,5 @@ Player::~Player()
 void Player::drawCard(Card* card)
 {
 	hand.push_back(card);
-	this->score += card->getValue;
+	this->score += card->getValue();
 }
