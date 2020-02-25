@@ -1,10 +1,14 @@
 #pragma once
 #include "Deck.h"
+//#include <vector>
+#include <iostream>
 
 class Player
 {
 private:
-	std::list<Card*> hand;
+	
+protected:
+	std::vector<Card*> hand;
 	int score;
 
 public:
