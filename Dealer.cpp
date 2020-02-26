@@ -8,9 +8,7 @@ Dealer::Dealer()
 
 Dealer::~Dealer()
 {
-	for (std::vector<Card*>::iterator currentCard = this->hand.begin(); currentCard != this->hand.end(); ++currentCard) {
-		delete((*currentCard));
-	}
+	
 }
 
 Dealer::Dealer(Deck* deck)
